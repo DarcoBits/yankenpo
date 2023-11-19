@@ -1,6 +1,6 @@
 body {
     /* Configuración del fondo y del contenedor principal */
-    background: url('imagenes/ciudad.gif') no-repeat center center fixed;
+    background: url('imagenes/cuarto.gif') no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
     margin: 0;
