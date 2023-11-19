@@ -92,3 +92,10 @@ body {
     padding: 10px;
     border-radius: 5px;
 }
+/* Estilos para el contenedor del video */
+#how-to-play iframe {
+    width: 100%;
+    max-width: 800px; /* Ajusta el ancho máximo según tus preferencias */
+    margin: 0px 0; /* Ajusta el margen según tus preferencias */
+    border: 2px solid #ffffff; /* Añade un borde alrededor del video */
+    border-radius: 10px; /* Añade bordes redondeados al contenedor */
