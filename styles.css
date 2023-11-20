@@ -19,7 +19,7 @@ body {
 #game-container {
     text-align: center;
     color: white;
-    margin-top: 180px;
+    margin-top: 250px;
     font-family: 'Libre Baskerville', serif;
 }
 
@@ -31,8 +31,8 @@ body {
 
 /* Estilos de imagen */
 .custom-image {
-    width: 100px;
-    height: 100px; 
+    width: 100%;
+    height: 70%; 
     cursor: pointer;
     border: 2px solid white; 
     border-radius: 50%; /* Hace que la imagen sea redonda */
@@ -95,8 +95,8 @@ body {
     flex-direction: row; /* Añade esta propiedad para alinear verticalmente */
     max-width: 191px;
     background: 
-        url('imagenes/robot.png') left top no-repeat,
-        url('imagenes/humano.png') right top no-repeat;
+        url('imagenes/humano.png') left top no-repeat,
+        url('imagenes/robot.png') right top no-repeat;
     background-size: 25%;
     border-radius: 12px;
     border: 3px solid white;
@@ -119,3 +119,13 @@ body {
     align-items: center;
     flex-direction: column;
 }
+.result-image {
+    width: 400px; /* o el valor que desees */
+    height: 250px;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-size: cover;
+    object-fit: cover; /* o el valor que desees */
+}
+
+
