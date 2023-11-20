@@ -127,5 +127,58 @@ body {
     background-size: cover;
     object-fit: cover; /* o el valor que desees */
 }
+/* Fuentes responsivas */
+@media screen and (max-width: 600px) {
 
+    body {
+        /* Configuración del fondo y del contenedor principal */
+        background-size: cover; /* Ajusta el tamaño del fondo para cubrir toda la pantalla */
+        align-items: center; /* Centra los elementos verticalmente en el eje transversal (eje Y) */
+        justify-content: center; /* Centra los elementos horizontalmente en el eje principal (eje X) */
+        justify-content: flex-start; /* Ajusta la alineación horizontal para empezar desde el principio (izquierda) */
+        font-size: 13px; /* Tamaño de fuente base establecido en 8 píxeles */
+        margin: 0%;
+    }
+    .custom-image {
+        width: 43%; /* Establece el ancho de la imagen al 100% del ancho del contenedor */
+        height: 50%; /* Establece la altura de la imagen al 70% de la altura del contenedor */
+        border-radius: 50%; /* Hace que la imagen tenga esquinas redondeadas, creando un efecto visual de círculo */
+        background-size: cover; /* Ajusta el tamaño del fondo para cubrir completamente el área del elemento */
+        transition: all 0.3s ease; /* Agrega una transición suave con una duración de 0.3 segundos a todos los cambios en la imagen */
+    }
+    .custom-image-container {
+        margin: 1%;
+        position: relative;
+        overflow: hidden; /* Evita que la sombra se desborde fuera del contenedor */
+        
+    }h1, h2{
+        font-size: 20px; /* Tamaño de fuente base establecido en 30 píxeles */
+    }
+    #how-to-play iframe {
+        width: 100%;
+        max-width: 100%; /* Ajusta el ancho máximo según tus preferencias */
+        margin: 10px 0; /* Ajusta el margen según tus preferencias */
+    }
+    /* Estilos para el score */
+    .score-bar {
+        flex-direction: row; /* Establece la dirección de los elementos hijos en una fila */
+        max-width: 100%; /* Establece el ancho máximo del elemento a 191 píxeles */
+        align-self: center; /* Se autoalinea al centro en el eje transversal (eje Y) */
+        align-items: center; /* Centra los elementos hijos verticalmente en el eje principal (eje X) */
+        padding: 20px 150px; /* Establece el relleno interno del elemento (20 píxeles arriba/abajo, 250 píxeles izquierda/derecha) */
+        gap: 33px; /* Establece el espacio entre los elementos hijos en 33 píxeles */
+        margin-left: auto; /* Mueve el elemento hacia la izquierda tanto como sea posible */
+        margin-right: auto; /* Mueve el elemento hacia la derecha tanto como sea posible */
+    }
+    .result-image {
+        width: 173px; /* Establece el ancho del elemento en 400 píxeles (ajusta según tus necesidades) */
+        height: 108px; /* Establece la altura del elemento en 250 píxeles (ajusta según tus necesidades) */
+        border-radius: 10px; /* Aplica bordes redondeados con un radio de 10 píxeles */
+        border: 2px solid white; /* Agrega un borde sólido blanco de 2 píxeles alrededor del elemento */
+        background-size: cover; /* Ajusta el tamaño del fondo para cubrir completamente el área del elemento */
+        object-fit: cover; /* Ajusta la forma del contenido de la imagen para cubrir completamente el área del elemento */
+    }
+
+
+}
 
