@@ -1,6 +1,10 @@
+/* Importa la fuente Silkscreen de Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Lobster&display=swap');
+
 body {
     /* Configuración del fondo y del contenedor principal */
-    background: url('imagenes/cuarto.gif') no-repeat center center fixed;
+    background: url('imagenes/2641052.gif') no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
     margin: 0;
@@ -8,86 +12,110 @@ body {
     align-items: center;
     justify-content: center;
     font-family: 'Roboto', sans-serif;
-}
-/* Estilos del marcador */
-#scoreboard {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    justify-content: flex-start; /* Cambia de 'center'*/    
 }
 
-#scoreboard h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
-    padding-bottom: 10px;
-}
-
+/* Estilos de LETRA GENERAL juego */
 #game-container {
-    /* Estilos del contenedor del juego */
     text-align: center;
     color: white;
+    margin-top: 180px;
+    font-family: 'Libre Baskerville', serif;
 }
 
+/* Estilos del contenedor de imagen */
 .custom-image-container {
-    /* Estilos del contenedor de imagen */
     margin: 10px;
     position: relative;
 }
 
+/* Estilos de imagen */
 .custom-image {
-    /* Estilos de imagen */
-    width: 100px; 
+    width: 100px;
     height: 100px; 
     cursor: pointer;
     border: 2px solid white; 
-    border-radius: 5px; 
+    border-radius: 50%; /* Hace que la imagen sea redonda */
     background-size: cover;
+    transition: all 0.3s ease; /* Agrega una transición suave a todos los cambios */
 }
 
-.result-icon {
-    /* Estilos del icono de resultado */
-    font-size: 2em;
-    margin-bottom: 10px;
+/* Efecto de agrandamiento al pasar el mouse por encima */
+.custom-image:hover {
+    transform: scale(1.3); /* Ajusta el valor según tus preferencias para el efecto de agrandamiento */
+    box-shadow: 0 0 10px rgba(215, 6, 6, 0.8); /* Añade una sombra alrededor de la imagen */
 }
 
-#score-container {
-    /* Estilos del contenedor de puntuación */
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    background-color: rgba(0, 255, 255, 0.173);
-    padding: 10px;
-    border-radius: 5px;
-}
-
-#score-container div {
-    /* Estilos del contenedor de puntuación individual */
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: white;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    padding: 10px;
-    border-radius: 5px;
+/* Estilos del contenedor de imagen */
+.custom-image-container {
+    margin: 10px;
+    position: relative;
+    overflow: hidden; /* Evita que la sombra se desborde fuera del contenedor */
 }
 
 /* Estilos para el contenedor del video */
 #how-to-play iframe {
     width: 100%;
-    max-width: 800px; /* Ajusta el ancho máximo según tus preferencias */
+    max-width: 500px; /* Ajusta el ancho máximo según tus preferencias */
     margin: 0px 0; /* Ajusta el margen según tus preferencias */
     border: 2px solid #ffffff; /* Añade un borde alrededor del video */
     border-radius: 10px; /* Añade bordes redondeados al contenedor */
+}
+
+/* Estilos para las columnas que contienen encabezados (h1) ESTA CORRECTOOOOOOOOOOOO*/
+.col-heading h1 {
+    font-family: "Verdana";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px; /* AQUI ANTERIOR 13*/
+    line-height: 22px; /* AQUI ANTERIOR 12*/
+    text-align: center;
+    color: white; /* Color del texto del encabezado */
+}
+
+  /* MARCADOOOORRR */
+
+  /* Estilos para las columnas que muestran la puntuación ESTA CORRECTOOOOOOOOOOOO */
+.col-display {
+    width: 51px;
+    height: 40px; /*ALTURA DEL FONDO*/
+    background: #080001; /* Fondo de la columna de puntuación */
+    border-radius: 5px;
+    font-family: "Silkscreen", cursive; /* Fuente Silkscreen para la puntuación */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px; /* AQUI ANTERIOR 30*/
+    line-height: 36px; /* AQUI ANTERIOR 36*/
+    text-align: center;
+    color: #f94f6d; /* Color del texto de la puntuación */
+}
+
+/* Estilos para el contenedor principal */
+.score-bar {
+    flex-direction: row; /* Añade esta propiedad para alinear verticalmente */
+    max-width: 191px;
+    background: 
+        url('imagenes/robot.png') left top no-repeat,
+        url('imagenes/humano.png') right top no-repeat;
+    background-size: 25%;
+    border-radius: 12px;
+    border: 3px solid white;
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    padding: 20px 250px; /*alto y ancho del div*/
+    gap: 33px;
+    box-shadow: 0px 0px 3px black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilos para las filas en el contenedor */
+.score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
