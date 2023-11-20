@@ -4,14 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Big Bang Theory Game</title>
+    <title>Yankempo</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/tippy.js@6.3.1/dist/tippy-bundle.umd.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -20,42 +19,52 @@
     <div id="game-container" class="container">
         <div class="row">
             <div class="col-12">
-                <h1 class="cold-mb-4" style="text-align: center;">Big Bang Theory Game</h1>
+                <h1 class="cold-mb-4" style="text-align: center;">Juega Piedra, Papel, Largarto o Spock </h1>
             </div>
         </div>
         <div class="row">
             <div class="custom-image-container col-6 col-md-2">
-                <img src="imagenes/piedra.gif" alt="Piedra" class="custom-image" onclick="play('piedra')" data-tippy-content="Piedra">
+                <img src="imagenes/piedra2.gif" alt="Piedra" class="custom-image" onclick="play('piedra')">
                 <div class="image-title">Piedra</div>
             </div>
 
             <div class="custom-image-container col-6 col-md-2">
-                <img src="imagenes/papel.gif" alt="Papel" class="custom-image" onclick="play('papel')" data-tippy-content="Papel">
+                <img src="imagenes/papel.gif" alt="Papel" class="custom-image" onclick="play('papel')" >
                 <div class="image-title">Papel</div>
             </div>
 
             <div class="custom-image-container col-6 col-md-2">
-                <img src="imagenes/lagarto.gif" alt="Lagarto" class="custom-image" onclick="play('lagarto')" data-tippy-content="Lagarto">
+                <img src="imagenes/lagarto.gif" alt="Lagarto" class="custom-image" onclick="play('lagarto')" >
                 <div class="image-title">Lagarto</div>
             </div>
 
             <div class="custom-image-container col-6 col-md-2">
-                <img src="imagenes/tijera.gif" alt="Tijera" class="custom-image" onclick="play('tijera')" data-tippy-content="Tijera">
+                <img src="imagenes/tijera.gif" alt="Tijera" class="custom-image" onclick="play('tijera')" >
                 <div class="image-title">Tijera</div>
             </div>
 
             <div class="custom-image-container col-6 col-md-2">
-                <img src="imagenes/spock.gif" alt="Spock" class="custom-image" onclick="play('spock')" data-tippy-content="Spock">
+                <img src="imagenes/spock.gif" alt="Spock" class="custom-image" onclick="play('spock')" >
                 <div class="image-title">Spock</div>
             </div>
         </div>
 
-        <!-- Contenedor del marcador de puntuación -->
-        <div id="score-container" class="animate__animated animate__fadeIn">
-            <h3 style="text-align: right;">Puntajes</h3>
-            <p class="mb-0">Jugador: <span id="playerScore">0</span></p>
-            <p class="mb-0">PC: <span id="computerScore">0</span></p>
+    <div class = "score-bar">
+        <div class="score">
+            <div class="col col-heading">
+                <h1>PC</h1>
+            </div>
+            <div class="col col-display" id="playerScore">0</div>
         </div>
+        <div class="score">
+            <div class="col col-heading">
+                <h1>TÚ</h1>
+            </div>
+            <div class="col col-display" id="computerScore">0</div>
+        </div>
+    </div>
+
+
 
         <div id="how-to-play" style="text-align: center; margin-top: 20px;">
             <!-- video de YouTube en el atributo "src" del iframe -->
@@ -63,7 +72,7 @@
         </div>
     </div>
 
-    <!-- Agregamos SweetAlert2 después de Tippy.js -->
+    <!-- Agregamos SweetAlert2 -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="script.js"></script>
 </body>
