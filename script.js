@@ -1,9 +1,3 @@
-// Inicializamos Tippy.js para mostrar tooltips
-tippy('.custom-image', {
-    placement: 'bottom',
-    animation: 'scale',
-    arrow: true
-});
 
 // Inicializamos el marcador
 var playerWins = 0;
@@ -51,3 +45,4 @@ function updateScore() {
     document.getElementById("playerScore").innerText = playerWins;
     document.getElementById("computerScore").innerText = computerWins;
 }
+
