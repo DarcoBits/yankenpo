@@ -12,6 +12,7 @@
     <script src="https://unpkg.com/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -19,7 +20,9 @@
     <div id="game-container" class="container">
         <div class="row">
             <div class="col-12">
-                <h1 class="cold-mb-4" style="text-align: center;">Juega Piedra, Papel, Largarto o Spock </h1>
+                <h1 class="cold-mb-4" style="text-align: center;">Juega Piedra, Papel, Largarto o spok </h1>
+                <h2 class="cold-mb-4" style="text-align: center;">Elige Uno La PC Elegira Otro Much Suerte! </h2>
+
             </div>
         </div>
         <div class="row">
@@ -44,21 +47,21 @@
             </div>
 
             <div class="custom-image-container col-6 col-md-2">
-                <img src="imagenes/spock.gif" alt="Spock" class="custom-image" onclick="play('spock')" >
-                <div class="image-title">Spock</div>
+                <img src="imagenes/spok.gif" alt="spok" class="custom-image" onclick="play('spok')" >
+                <div class="image-title">Spok</div>
             </div>
         </div>
 
     <div class = "score-bar">
         <div class="score">
             <div class="col col-heading">
-                <h1>PC</h1>
+                <h1>TÚ</h1>
             </div>
             <div class="col col-display" id="playerScore">0</div>
         </div>
         <div class="score">
             <div class="col col-heading">
-                <h1>TÚ</h1>
+                <h1>PC</h1>
             </div>
             <div class="col col-display" id="computerScore">0</div>
         </div>
@@ -74,7 +77,7 @@
 
     <!-- Agregamos SweetAlert2 -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 
 </html>
