@@ -66,7 +66,7 @@ function displayResult(message, icon, computerChoice, playerChoice) {
 // Función para obtener la URL de la imagen correspondiente a la elección
 function getImageUrl(computerChoice, playerChoice) {
     // Define las URL de las imágenes para cada combinación
-    const imageUrls = {
+        const imageUrls = {
         //piedra
         "piedra_piedra": "imagenes/empate.gif",
         "piedra_papel": "imagenes/papel_piedra.gif",
@@ -80,7 +80,7 @@ function getImageUrl(computerChoice, playerChoice) {
         "papel_lagarto": "imagenes/lagarto_papel.gif",
         "papel_spok": "imagenes/papel_spok.gif",
         //lagarto
-        "lagarto_piedra": "url_imagen_lagarto_piedra",
+        "lagarto_piedra": "imagenes/piedra_lagarto.gif",
         "lagarto_papel": "imagenes/lagarto_papel.gif",
         "lagarto_tijera": "url_imagen_lagarto_tijera",
         "lagarto_lagarto": "imagenes/empate.gif",
@@ -89,7 +89,7 @@ function getImageUrl(computerChoice, playerChoice) {
         "tijera_piedra": "imagenes/piedra_tijera.gif",
         "tijera_papel": "imagenes/tijera_papel.gif",
         "tijera_tijera": "imagenes/piedra_tijera.gif",
-        "tijera_lagarto": "url_imagen_tijera_lagarto",
+        "tijera_lagarto": "imagenes/lagarto_tijera.gif",
         "tijera_spok": "imagenes/spok_tijera.gif",
         //spok
         "spok_piedra": "imagenes/spok_piedra.gif",
